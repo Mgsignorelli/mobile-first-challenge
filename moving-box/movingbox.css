@@ -1,0 +1,54 @@
+body, html {
+  background-color: #F5F5F5;
+  color: #555;
+  font-size: 1.1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.box {
+  background-color: #EF77AF;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transition: left 1s ease-out;
+  left: 0;
+    -webkit-transition-property: background-color, left;
+  transition-property: background-color, left;
+  -webkit-transition-duration: 1s, 1s;
+  transition-duration: 1s, 1s;
+  -webkit-transition-timing-function: ease-in, cubic-bezier(.82, .1, .14, 1.12);
+  transition-timing-function: ease-in, cubic-bezier(.82, .1, .14, 1.12);
+}
+
+.box:hover {
+  left: 50px;
+  background-color: #990048; 
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 700px;
+  padding: 1em;
+  border: 1px solid #aaa;
+  background-color: white;
+}
+
+.element {
+  padding: 1em;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  background-color: #990048;
+  position: relative;
+  -webkit-transition-property: background-color, left;
+  transition-property: background-color, left;
+  -webkit-transition-duration: 1s, 1s;
+  transition-duration: 1s, 1s;
+  -webkit-transition-timing-function: ease-in, cubic-bezier(.82, .1, .14, 1.12);
+  transition-timing-function: ease-in, cubic-bezier(.82, .1, .14, 1.12);
+}
+
+.container:hover .element {
+  left: 50px;
+  background-color: #EF77AF;
+}

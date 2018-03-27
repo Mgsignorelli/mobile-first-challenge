@@ -1,0 +1,31 @@
+.box {
+  background-color: #0799d3;
+  width: 100px;
+  height: 100px;
+  animation-name: toCircle;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes toCircle {
+  from {
+    border-radius: 0;
+  }
+
+  to {
+    border-radius: 100%;
+  }
+}
+
+@-webkit-keyframes toCircle {
+  from {
+    border-radius: 0;
+  }
+
+  to {
+    border-radius: 100%;
+  }
+}
